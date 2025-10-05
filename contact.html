@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Origin's Spices — Premium Export Spices</title>
+<meta name="description" content="Origins Spices: Exporting premium, sustainably-sourced spices worldwide. Green cardamom, turmeric, black pepper and more Indian spices exported globally." />
+<meta name="keywords" content="export spices, Indian spices, premium spices, buy spices online, wholesale spices, cardamom, turmeric, black pepper, spice exporter India" />
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png">
+
+
+<meta property="og:title" content="Origin's Spices — Premium Export Spices" />
+<meta property="og:description" content="Sustainably-sourced premium spices for global buyers — ISO & lab-tested. Get samples, quick shipping and export documentation." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/assets/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+  
+
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+
+  <style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav.transparent {
+  background: rgba(255, 255, 255, 0.625);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #a32c00;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff4400;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+.social-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-contact a {
+  color: #202020;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-contact a:hover {
+  color: #ff5200;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #212121;
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 30px;
+  }
+  .social-contact a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .hamburger {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  nav ul.active {
+    display: flex;
+  }
+  .social-contact {
+    display: none;
+  }
+  nav.transparent {
+    background: rgba(255,255,255,0.9);
+  }
+  .text-box {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+}
+
+
+  @media (max-width: 992px) {
+    .product-card {
+      flex: 1 1 calc(50% - 2rem);
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .product-card {
+      flex: 1 1 100%;
+    }
+  }
+
+
+
+
+  /* ======= Basic Reset ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* ======= Navbar ======= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #b22222;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links .nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links .nav-item:hover,
+.nav-item.active {
+  color: #b22222;
+}
+
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .about-image {
+    flex:  100%;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    
+  }
+
+  .about-content {
+    flex:  100%;
+  }
+
+  @media (max-width: 992px) {
+    .about-container {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+    .about-image, .about-content {
+      flex: 100%;
+    }
+  }
+
+/* -------------------------------------------------------------------------------- */
+/* ======= Hero Section ======= */
+.contact-hero {
+  position: relative;
+  height: 400px;
+  background: url('/cnt1.png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-hero .overlay {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 80%;
+}
+
+.contact-hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  text-shadow: #000 10px 10px 15px;
+}
+
+.contact-hero p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-top: 10px;
+}
+
+/* Map Section */
+    .map-container {
+      width: 100%;
+      height: 55vh;
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fefefe;
+      margin-top: -100px; /* overlaps slightly with map */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 70%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 10;
+      padding: 30px;
+      margin-bottom: 50px;
+    }
+
+    .contact-left {
+      flex: 1;
+      min-width: 250px;
+      background: #a70000;
+      color: #ffffff;
+      padding: 50px 40px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .contact-left h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .contact-left p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .contact-left strong {
+      display: inline-block;
+      width: 100px;
+    }
+
+    /*----------------------------*/
+    .contact-right {
+      flex: 2;
+      min-width: 300px;
+      padding: 50px;
+      background: #fff;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .contact-right h2 {
+      font-size: 1.8rem;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .contact-right p {
+      color: #555;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #d63333;
+      outline: none;
+      box-shadow: 0 0 5px rgba(214,51,51,0.3);
+    }
+
+    button {
+      background: gray;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #ff7b00, #e04300);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+      .contact-section {
+        flex-direction: column;
+        margin-top: 0;
+        border-radius: 0;
+        width: 100%;
+      }
+
+      .contact-left, .contact-right {
+        border-radius: 0;
+      }
+
+      .contact-right {
+        padding: 40px 25px;
+      }
+    }
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+  /* Footer Links */
+  .footer-link {
+    color:#ccc;
+    text-decoration:none;
+    display:block;
+    margin-bottom:0.6rem;
+    transition: color 0.3s ease;
+  }
+  .footer-link:hover { color:#00c9ff; }
+
+  /* Social icons */
+  .footer-social a {
+    font-size:1.2rem;
+    color:#ccc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+  }
+  .footer-social a:hover {
+    color:#fff;
+    background: linear-gradient(135deg, #ff7b00, #e04300);
+    transform:scale(1.2);
+  }
+
+  /* Footer bottom links */
+  .footer-bottom-link {
+    color:#888;
+    text-decoration:none;
+    transition: color 0.3s ease;
+  }
+  .footer-bottom-link:hover { color:#00c9ff; }
+
+  /* Floating icons */
+  .footer-float-icon {
+    position:absolute;
+    font-size:2rem;
+    color:rgba(255,255,255,0.05);
+    animation: floatFooter 6s ease-in-out infinite alternate;
+  }
+  .icon1 { top:10%; left:5%; animation-delay:0s; }
+  .icon2 { bottom:20%; right:10%; animation-delay:2s; }
+  .icon3 { top:50%; left:80%; animation-delay:4s; }
+
+  @keyframes floatFooter {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(-10deg); }
+  }
+
+  /* Responsive */
+  @media(max-width:992px){
+    .footer-top { flex-direction:column; gap:3rem; }
+    .footer-bottom { flex-direction:column; gap:1rem; align-items:center; }
+    .partners-list { justify-content:center; }
+  }
+
+
+   .footer-botto {
+        
+            text-align: center;
+            margin-top: 1px;
+            font-size: 12px;
+            color: #a80000;
+            background-color: #ffffff;
+            padding: 5px;
+        }
+        
+        .footer-botto a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+/* Back to Top Button Styling */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      border-radius: 9px;
+      padding: 9px;
+      display: none;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+    
+    #backToTopBtn:hover {
+      background-color: #e65c00;
+    }
+    
+    @media (max-width: 768px) {
+    .header {
+      font-size: 18px;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+    }
+    
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+/* Footer Links */
+  .footer-link {
+    color:#ccc;
+    text-decoration:none;
+    display:block;
+    margin-bottom:0.6rem;
+    transition: color 0.3s ease;
+  }
+  .footer-link:hover { color:#00c9ff; }
+
+  /* Social icons */
+  .footer-social a {
+    font-size:1.2rem;
+    color:#ccc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+  }
+  .footer-social a:hover {
+    color:#fff;
+    background: linear-gradient(135deg, #ff7b00, #e04300);
+    transform:scale(1.2);
+  }
+
+  /* Footer bottom links */
+  .footer-bottom-link {
+    color:#888;
+    text-decoration:none;
+    transition: color 0.3s ease;
+  }
+  .footer-bottom-link:hover { color:#00c9ff; }
+
+  /* Floating icons */
+  .footer-float-icon {
+    position:absolute;
+    font-size:2rem;
+    color:rgba(255,255,255,0.05);
+    animation: floatFooter 6s ease-in-out infinite alternate;
+  }
+  .icon1 { top:10%; left:5%; animation-delay:0s; }
+  .icon2 { bottom:20%; right:10%; animation-delay:2s; }
+  .icon3 { top:50%; left:80%; animation-delay:4s; }
+
+  @keyframes floatFooter {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(-10deg); }
+  }
+
+  /* Responsive */
+  @media(max-width:992px){
+    .footer-top { flex-direction:column; gap:3rem; }
+    .footer-bottom { flex-direction:column; gap:1rem; align-items:center; }
+    .partners-list { justify-content:center; }
+  }
+
+/* Write here new section code */
+
+
+
+
+
+
+/* End of new code section */
+
+</style>
+
+
+<body>
+<!-- NAVBAR -->
+<nav id="navbar" >
+  <div class="logo"><img src="/logo.png" style="height: 70px;"></div>
+
+  <ul id="menu">
+    <li><a href="/index.html" >Home</a></li>
+    <li><a href="/about.html">About Us</a></li>
+    <li><a href="index.html">Products</a></li>
+    <li><a href="about.html">Certificates</a></li>
+    <li><a href="/contact.html" class="active">Contact</a></li>
+  </ul>
+
+  <div class="social-contact">
+    <a href="https://facebook.com/originsspices" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/origins_spices" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/origins-spices" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://x.com/origins_spices" target="_blank"><i class="fab fa-twitter"></i></a>
+    <div class="whatsapp">
+      <i class="fab fa-whatsapp"></i> +91 99753 79874
+    </div>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+
+<!-- Here is the main Codes 
+------------------------------->
+
+<!-- ======= Hero Section ======= -->
+  <section class="contact-hero">
+    <div class="overlay">
+      <h1>Get in Touch</h1>
+      <p>We’d love to hear from you! Whether you’re a distributor, supplier, or spice enthusiast.</p>
+    </div>
+  </section>
+
+<!-- ======= End of Hero Section ======= -->
+
+<!-- Google Map -->
+  <section class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483028.4536786807!2d72.93945950766754!3d18.946446896628245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1284fac5c93%3A0xbaf16663e3b13f51!2sOrigin&#39;s%20Spices!5e0!3m2!1sen!2sin!4v1759606968580!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p><strong>Address  :</strong><br>
+        <br>Origin's Spices
+        <br>Shop No 3, Neelaya by Naiknavare, near Abc Petrol Pump, Talegaon Dabhade, Pune Maharashtra - 410506 (INDIA)</p>
+
+      <p><strong>Contact No  :</strong> +91 99753 79874</p>
+
+      <p><strong>Email  :</strong> business@originsspices.in</p>
+    </div>
+
+    <div class="contact-right">
+      <h2>Know More About Origins's Spices</h2>
+      <p>Get in touch with us by filling out the form below.</p>
+
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="phone" placeholder="Mobile No." required>
+        <input type="email" placeholder="Email-ID" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<!-- End of the main codes 
+------------------------------->
+
+
+
+<!-- FOOTER SECTION -->
+<footer style="background: linear-gradient(135deg, #222, #1a1a1a); color:#fff; padding:6rem 6%; position:relative; overflow:hidden; font-family:sans-serif;">
+  <!-- Footer Top -->
+  <div class="footer-top" style="display:flex; flex-wrap:wrap; gap:3rem; justify-content:space-between;">
+    
+    <!-- Logo + About -->
+    <div class="footer-col" style="flex:1 1 250px;">
+      <div class="footer-logo" ><img src="/logo.png" style="height: 100px"></div>
+      <p style="color:#ccc;">Leading exporter of premium spices and blends, delivering quality and flavor worldwide.</p>
+      <!-- Social Icons -->
+      <div class="footer-social" style="margin-top:1.5rem; display:flex; gap:1rem;">
+        <a href="https://facebook.com/originsspices" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/origins_spices" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/origins-spices" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://x.com/origins_spices" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col" style="flex:1 1 200px;">
+      <h4 style="margin-bottom:1rem; color:#ff6363;">Quick Links</h4>
+      <ul style="list-style:none; padding:0;">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="index.html" class="footer-link">Our Products</a></li>
+        <li><a href="/about.html" class="footer-link">About Us</a></li>
+        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+         <li><a href="/about.html" class="footer-link">Certificates</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col" style="flex:1 1 200px;">
+      <h4 style="margin-bottom:1rem; color:#ff6363;">Contact</h4>
+      
+      <ul class="partners-list" style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:1rem;">
+        <li><p><strong>Address :</strong><br> Origin's Spices
+Shop No 3, Neelaya by Naiknavare, near Abc Petrol Pump, Talegaon Dabhade, Pune Maharashtra - 410506 (INDIA)  </p></li>
+        <li><p><strong>Contact No. :</strong>+91 9975379874</p></li>
+        <li><p><strong>Email :</strong> business@originsspices.in</p></li> 
+
+      </ul>
+    </div>
+
+    <!-- Our Partners -->
+    <div class="footer-col" style="flex:1 1 300px;">
+      <h4 style="margin-bottom:1rem; color:#ff6363;">Our Partners</h4>
+      <ul class="partners-list" style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:1rem;">
+        <li>Shrawani Addsbs India Pvt Ltd.</li>
+        <li>Shrawani Industries india pvt ltd</li>
+        <li>Anasha Digisoln</li> and
+        <li>Nath Leno</li>
+
+      </ul>
+      <a href="#" class="see-all" style="display:inline-block; margin-top:1rem; color:#ff0000; text-decoration:none; font-weight:600;">See All →</a>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom" style="border-top:1px solid #444; margin-top:3rem; padding-top:2rem; display:flex; flex-wrap:wrap; justify-content:space-between; font-size:0.9rem; color:#888;">
+    <p>©2025 Shrawani Farmfoods India LLP | All rights reserved</p>
+    <div style="display:flex; gap:1.5rem;">
+      <a href="#" class="footer-bottom-link">Terms</a>
+      <a href="#" class="footer-bottom-link">Privacy</a>
+      <a href="#" class="footer-bottom-link">Compliances</a>
+    </div>
+  </div>
+
+  <!-- Floating subtle animation shapes -->
+  <div class="footer-float-icon icon1">&#10052;</div>
+  <div class="footer-float-icon icon2">&#9733;</div>
+  <div class="footer-float-icon icon3">&#10084;</div>
+</footer>
+
+<!-- Bottom Line -->
+<div class="footer-botto">
+  
+             <p style="color:black; font-weight:bold;">Designed and Developed by <a href="https://anashadigisoln.in" target="_blank">Anasha Digisoln</a> <a href="https://www.instagram.com/anasha_digisoln/?hl=en" target="_blank"><img src="https://rjiindia.in/Anasha2.png" alt="Anasha Digisoln Logo" class="anasha-logo" style="height: 20px;"></a></p>
+         </div>
+
+<!-- Back to Top Button -->
+      <a id="backToTopBtn" href="#home">
+          <i class="fa fa-angle-up"></i>
+      </a>
+
+
+<script>
+// NAVBAR SCROLL EFFECT
+window.addEventListener("scroll", () => {
+  const nav = document.getElementById("navbar");
+  if (window.scrollY > 100) {
+    nav.classList.add("transparent");
+  } else {
+    nav.classList.remove("transparent");
+  }
+});
+
+// HAMBURGER MENU
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+// CHANGING TEXT
+const textArray = [
+  "Delivering the finest Indian spices to the world.",
+  "Sourced from the heart of India’s spice lands.",
+  "Quality that adds aroma to every kitchen.",
+  "Bringing authentic taste to every meal."
+];
+let index = 0;
+setInterval(() => {
+  const text = document.getElementById("changingText");
+  text.style.opacity = 0;
+  setTimeout(() => {
+    index = (index + 1) % textArray.length;
+    text.textContent = textArray[index];
+    text.style.opacity = 1;
+  }, 500);
+}, 5000);
+
+
+
+// Back to Top Button Visibility
+      const backToTopBtn = document.getElementById("backToTopBtn");
+  
+      window.onscroll = function() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+              backToTopBtn.style.display = "block";  // Show button
+          } else {
+              backToTopBtn.style.display = "none";  // Hide button
+          }
+      }
+
+
+      // Navbar scroll effect
+    const nav = document.getElementById("navbar");
+    const navLinks = document.getElementById("navLinks");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+    function toggleMenu() { navLinks.classList.toggle("active"); }
+
+    // Slider
+    const slides = document.querySelectorAll(".slide");
+    const controls = document.getElementById("controls");
+    let currentIndex = 0;
+
+    // Create dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => goToSlide(i));
+      controls.appendChild(dot);
+    });
+    const dots = document.querySelectorAll(".dot");
+
+    function goToSlide(index) {
+      slides[currentIndex].classList.remove("active");
+      dots[currentIndex].classList.remove("active");
+      slides[index].querySelector(".slide-text").classList.add("active");
+      slides[currentIndex].querySelector(".slide-text").classList.remove("active");
+
+      currentIndex = index;
+
+      slides[currentIndex].classList.add("active");
+      dots[currentIndex].classList.add("active");
+    }
+
+    function nextSlide() {
+      let nextIndex = (currentIndex + 1) % slides.length;
+      goToSlide(nextIndex);
+    }
+
+    setInterval(nextSlide, 5000); // auto slide
+  
+
+</script>
+<!-- Font Awesome CDN for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
