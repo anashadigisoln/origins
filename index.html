@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Origin's Spices — Premium Export Spices</title>
+<title>Welcome to Origin's Spices a Premium Quality Spices Exporter</title>
 <meta name="description" content="Origins Spices: Exporting premium, sustainably-sourced spices worldwide. Green cardamom, turmeric, black pepper and more Indian spices exported globally." />
 <meta name="keywords" content="export spices, Indian spices, premium spices, buy spices online, wholesale spices, cardamom, turmeric, black pepper, spice exporter India" />
 <meta name="robots" content="index, follow">
@@ -13,28 +13,30 @@
 
 <link rel="icon" type="image/png" href="favicon.png">
 
-
-
 <meta property="og:title" content="Origin's Spices — Premium Export Spices" />
 <meta property="og:description" content="Sustainably-sourced premium spices for global buyers — ISO & lab-tested. Get samples, quick shipping and export documentation." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/assets/og-image.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-
-
-
-  <style>
-/* RESET */
+<style>
+/* NARRATION: Global Styles and Utility CSS
+  This block contains all necessary CSS. It starts with a global reset, 
+  sets up smooth scrolling, and styles the main components like the fixed 
+  navigation bar and the hero section.
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
 /* NAVBAR */
@@ -58,6 +60,8 @@ nav.transparent {
   backdrop-filter: blur(5px);
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+/* ... (rest of the basic styling for logo, nav links, social icons) ... */
 
 .logo {
   font-size: 1.8rem;
@@ -149,7 +153,7 @@ nav ul li a.active::after {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .text-box {
@@ -157,16 +161,16 @@ nav ul li a.active::after {
   z-index: 2;
   max-width: 500px;
   color: #fff;
-  background: rgba(113, 111, 111, 0.69); /* gray background */
+  background: rgba(68, 67, 67, 0.69); 
   padding: 30px 25px;
-  margin-left: 80px;
+  margin-left: 130px;
   border-radius: 8px;
 }
 
 .text-box h1 {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   color: rgb(255, 255, 255);
   text-shadow: #363535 3px 2px 4px;
 }
@@ -184,58 +188,7 @@ nav ul li a.active::after {
   min-height: 30px;
   transition: opacity 0.6s ease;
   color: #ffffff;
-
-   
-}
-
-
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  nav {
-    padding: 15px 30px;
-  }
-  .social-contact a {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 850px) {
-  .hamburger {
-    display: flex;
-  }
-  nav ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background: #fff;
-    text-align: center;
-    display: none;
-    padding: 20px 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
-  nav ul.active {
-    display: flex;
-  }
-  .social-contact {
-    display: none;
-  }
-  nav.transparent {
-    background: rgba(255,255,255,0.9);
-  }
-  .text-box {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .text-box {
-    margin: 0 auto;
-    text-align: center;
-  }
-
+  padding-bottom: 20px;
 }
 
  .buttons {
@@ -244,22 +197,21 @@ nav ul li a.active::after {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 20px;
-    
   }
 
   /* ACTIVE BUTTON (FILLED) */
   .btn.active {
     padding: 10px 25px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     text-transform: Titlecase;
-    background: linear-gradient(135deg, #ff7b00, #e04300);
+    background: rgb(178, 0, 0);
     box-shadow: 0 0 12px rgba(255, 179, 0, 0.5);
     transition: all 0.3s ease;
-    
+    text-decoration: none;
   }
 
   .btn.active:hover {
@@ -271,14 +223,15 @@ nav ul li a.active::after {
   /* OUTLINE BUTTON */
   .btn.outline {
     padding: 10px 25px;
-    font-size: 14px;
-    font-weight: 500;
-    border: 2px solid #2f2f2f;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     background: transparent;
     color: #ffffff;
     text-transform: Titlecase;
     transition: all 0.3s ease;
+    text-decoration: none;
   }
 
   .btn.outline:hover {
@@ -288,159 +241,7 @@ nav ul li a.active::after {
     transform: scale(1.07);
   }
 
-  @media (max-width: 768px) {
-    .hero h1 { font-size: 2.2rem; }
-    .hero p { font-size: 1rem; }
-  }
-</style>
-
-<body>
-
-<!-- NAVBAR -->
-<nav id="navbar" >
-  <div class="logo"><img src="logo.png" style="height: 70px;"></div>
-
-  <ul id="menu">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-
-  <div class="social-contact">
-    <a href="https://facebook.com/originsspices" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://instagram.com/origins_spices" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/company/origins-spices" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://x.com/origins_spices" target="_blank"><i class="fab fa-twitter"></i></a>
-    <div class="whatsapp">
-      <i class="fab fa-whatsapp"></i> +91 99753 79874
-    </div>
-  </div>
-
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
-
-<!-- HERO SECTION -->
-<section id="home" class="hero">
-  <div class="overlay"></div>
-  <div class="text-box">
-    <h1>Sustainably sourced spices packed for global kitchens</h1>
-    
-    <p id="changingText">Delivering the finest Indian spices to the world.</p>
-    
-
-  <!-- ==== HERO SECTION ==== -->
-  <section class="buto">
-      <div class="buttons">
-      <a href="contact.html" class="btn active">Request Samples</a>
-      <a href="#products" class="btn outline">View Products</a>
-      </div>
-    </div>
-  </section>
-   
-
-  <!-- ==== JS for Smooth Scroll ==== -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  </script>
-
-  </div>
-
-
-</section>
-
-<script>
-// NAVBAR SCROLL EFFECT
-window.addEventListener("scroll", () => {
-  const nav = document.getElementById("navbar");
-  if (window.scrollY > 100) {
-    nav.classList.add("transparent");
-  } else {
-    nav.classList.remove("transparent");
-  }
-});
-
-// HAMBURGER MENU
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
-hamburger.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
-
-// CHANGING TEXT
-const textArray = [
-  "Delivering the finest Indian spices to the world.",
-  "Sourced from the heart of India’s spice lands.",
-  "Quality that adds aroma to every kitchen.",
-  "Bringing authentic taste to every meal."
-];
-let index = 0;
-setInterval(() => {
-  const text = document.getElementById("changingText");
-  text.style.opacity = 0;
-  setTimeout(() => {
-    index = (index + 1) % textArray.length;
-    text.textContent = textArray[index];
-    text.style.opacity = 1;
-  }, 500);
-}, 5000);
-</script>
-
-
-<!-- OUR COMMITMENTS SECTION -->
-<section style="padding: 6rem 6%; background:#f4f4f4;">
-  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#222;">Our Commitments</h2>
-  
-  <div class="commitments-container">
-    <!-- Commitment 1 -->
-    <div class="commitment-card">
-      <div class="icon">
-        <img src="assure.png" style="height: 50px;" alt="Quality Icon">
-      </div>
-      <div class="content">
-        <h3>Quality Assured</h3>
-        <p>ISO & Lab-certified products. Batch-level lab reports available on request.</p>
-      </div>
-    </div>
-
-    <!-- Commitment 2 -->
-    <div class="commitment-card">
-      <div class="icon">
-         <img src="trace.png" style="height: 50px;" alt="Traceability">
-      </div>
-      <div class="content">
-        <h3>Traceability</h3>
-        <p>From farm to port — full traceability and transparent supply chains.</p>
-      </div>
-    </div>
-
-    <!-- Commitment 3 -->
-    <div class="commitment-card">
-      <div class="icon">
-        <img src="Expert.png" style="height: 50px;" alt="Export Icon">  
-      </div>
-      <div class="content">
-        <h3>Export Expertise</h3>
-        <p>Custom packaging, FCL/LCL shipments, and export documentation support.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
+  /* Commitments Section Styles */
   .commitments-container {
     display: flex;
     justify-content: space-between;
@@ -459,6 +260,7 @@ setInterval(() => {
     min-width: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  /* ... (rest of the commitments CSS) ... */
 
   .commitment-card:hover {
     transform: translateY(-5px);
@@ -484,48 +286,7 @@ setInterval(() => {
     line-height: 1.6;
   }
 
-  @media (max-width: 992px) {
-    .commitments-container {
-      flex-direction: column;
-      gap: 2rem;
-    }
-  }
-</style>
-
-
-
-<!-- OUR PRODUCTS SECTION WITH IMAGES -->
-<section id="products" style="padding: 6rem 6%; background:#fff;">
-  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#222;">Our Signature Products</h2>
-
-  <div class="products-container">
-    <!-- Product 1: Chili Powder -->
-    <div class="product-card" style="background:#D32F2F;">
-      <img src="chilli.png" alt="Chili Powder">
-      <h3>Chili Powder</h3>
-    </div>
-
-    <!-- Product 2: Cumin -->
-    <div class="product-card" style="background:#a16d38;">
-      <img src="cumins.png" alt="Cumin">
-      <h3>Cumin</h3>
-    </div>
-
-    <!-- Product 3: Turmeric -->
-    <div class="product-card" style="background:#FFC107; color:#222;">
-      <img src="turmeric.png" alt="Turmeric">
-      <h3>Turmeric</h3>
-    </div>
-
-    <!-- Product 4: Coriander -->
-    <div class="product-card" style="background:#388E3C;">
-      <img src="coria.png" alt="Coriander">
-      <h3>Coriander</h3>
-    </div>
-  </div>
-</section>
-
-<style>
+  /* Products Section Styles */
   .products-container {
     display: flex;
     gap: 2rem;
@@ -552,7 +313,7 @@ setInterval(() => {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     padding: 1rem;
   }
-
+  /* ... (rest of the products CSS) ... */
   .product-card img {
     width: 280px;
     height: 280px;
@@ -592,48 +353,7 @@ setInterval(() => {
     position: relative;
   }
 
-  @media (max-width: 992px) {
-    .product-card {
-      flex: 1 1 calc(50% - 2rem);
-      margin-bottom: 2rem;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .product-card {
-      flex: 1 1 100%;
-    }
-  }
-</style>
-
-
-
-<!-- ABOUT US SECTION -->
-<section style="padding:6rem 6%; background: linear-gradient(135deg, #fdfbfb, #ebedee);">
-  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:4rem; color:#222;">About Us</h2>
-
-  <div class="about-container">
-    <!-- Image Side -->
-    <div class="about-image">
-      <img src="SPP1.png" alt="About Us Image">
-    </div>
-
-    <!-- Text Side -->
-    <div class="about-content">
-      <h3>Who We Are</h3>
-      <p>
-        Origin's Spices: Your Trusted Global Spice Partner Origin's Spices is a Natural Brand of Shrawani Farmfood India LLP which is a SHRWANI GROUP of company building expertise in international spice sourcing and supply chain management.
-      </p>
-      <p>
-        We are dedicated to providing global buyers with premium Indian spices, ensuring both purity and reliability in every shipment. Our business is founded on ethical partnerships: we work directly with small farmers and cooperatives across India. This collaborative approach allows us to maintain exceptional product quality, guarantee complete traceability, and ensure fair pricing and sustainable practices at the source.
-      </p>
-      
-      <a href="about.html" class="btn-about">Learn More</a>
-    </div>
-  </div>
-</section>
-
-<style>
+  /* About Section Styles */
   .about-container {
     display: flex;
     align-items: center;
@@ -641,6 +361,7 @@ setInterval(() => {
     gap: 4rem;
     flex-wrap: wrap;
   }
+  /* ... (rest of the about CSS) ... */
 
   .about-image {
     flex: 1 1 30%;
@@ -695,19 +416,488 @@ setInterval(() => {
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
   }
 
-  @media (max-width: 992px) {
-    .about-container {
-      flex-direction: column-reverse;
-      gap: 2rem;
-    }
-    .about-image, .about-content {
-      flex: 1 1 100%;
-    }
+  /* Certificates Section Styles */
+  #certificates {
+    padding: 40px 20px;
+    text-align: center;
   }
+  /* ... (rest of the certificates CSS) ... */
+
+  #certificates h2 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .certificate {
+    position: relative;
+    width: 200px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(87, 86, 86, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .certificate img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .certificate .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .certificate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  }
+
+  .certificate:hover .overlay {
+    opacity: 1;
+  }
+  
+ /* ===== Footer Section ===== */
+    footer {
+      background: linear-gradient(135deg, #222, #1a1a1a);
+      color: #fff;
+      padding: 5rem 8%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    .footer-col {
+      flex: 1 1 250px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 1rem;
+      color: #ff6363;
+    }
+
+    .footer-col p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .footer-link {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.6rem;
+      transition: color 0.3s;
+    }
+
+    .footer-link:hover {
+      color: #00c9ff;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .footer-social a {
+      font-size: 1.2rem;
+      color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #fff;
+      background: linear-gradient(135deg, #ff7b00, #e04300);
+      transform: scale(1.2);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .footer-bottom a {
+      color: #888;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: #00c9ff;
+    }
+
+    /* ===== Floating Icons ===== */
+    .footer-float-icon {
+      position: absolute;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.05);
+      animation: floatFooter 6s ease-in-out infinite alternate;
+    }
+
+    .icon1 {
+      top: 10%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .icon2 {
+      bottom: 20%;
+      right: 10%;
+      animation-delay: 2s;
+    }
+
+    .icon3 {
+      top: 50%;
+      left: 80%;
+      animation-delay: 4s;
+    }
+
+    @keyframes floatFooter {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(10deg);
+      }
+
+      100% {
+        transform: translateY(0) rotate(-10deg);
+      }
+    }
+
+    /* ===== Footer Responsive Fix ===== */
+    @media (max-width: 768px) {
+      footer {
+        padding: 3rem 6%;
+        text-align: center;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+      }
+
+      .footer-col {
+        max-width: 100%;
+      }
+
+      .footer-social {
+        justify-content: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+
+    /* ===== Footer Bottom Bar ===== */
+    .footer-botto {
+      text-align: center;
+      font-size: 12px;
+      color: #a80000;
+      background: #fff;
+      padding: 5px;
+    }
+
+    .footer-botto a {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Back to Top Button Styling */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      border-radius: 9px;
+      padding: 9px;
+      display: none;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+    
+    #backToTopBtn:hover {
+      background-color: #e65c00;
+    }
+    
+    /* RESPONSIVE STYLES */
+    @media (max-width: 1024px) {
+      nav {
+        padding: 15px 30px;
+      }
+      .social-contact a {
+        font-size: 1rem;
+      }
+      .commitments-container {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .product-card {
+        flex: 1 1 calc(50% - 2rem);
+        margin-bottom: 2rem;
+      }
+      .about-container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+      }
+      .about-image, .about-content {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* NARRATION: Mobile-Specific Overrides (max-width: 768px) */
+/* This block addresses phone screen issues like the Moto G85 Fusion. */
+@media (max-width: 768px) {
+    /* ✨ RESIZABLE HERO TEXT BOX FIX: Use fluid width and smaller padding */
+    .text-box {
+        /* Set width to 85% of the screen width for a resizable container */
+        width: 85%; 
+        
+        /* Reduced padding for smaller screens to save vertical space */
+        padding: 15px 15px; 
+        
+        /* Centers horizontally (0 auto) and adds 20px spacing from the bottom edge */
+        margin: 0 auto 130px auto; 
+        text-align: center;
+    }
+
+    /* VERTICAL ALIGNMENT FIX: Push content to the bottom of the hero section */
+    .hero {
+        align-items: flex-end; /* Pushes the text-box to the bottom */
+        
+        /* HERO IMAGE FIX: Replace Desktop Hero Image with Mobile-Optimized Image */
+        background-image: url('slm.png'); 
+        background-position: top center; 
+    }
+
+    /* ADJUST FONT SIZE FOR TEXT BOX ON MOBILE to prevent overflow */
+    .hero h1 { 
+        font-size: 1.8rem; /* Reduced from 2.2rem */
+        line-height: 1.2;
+    }
+    .hero p, .text-box p { 
+        font-size: 0.9rem; /* Reduced from 1rem */
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+
+    /* FOOTER FIX: Forces footer columns to stack vertically */
+    .footer-col {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* GENERAL MOBILE STYLES */
+    .hamburger {
+      display: flex;
+    }
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: #fff;
+      text-align: center;
+      display: none;
+      padding: 20px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    nav ul.active {
+      display: flex;
+    }
+    .social-contact {
+      display: none;
+    }
+    nav.transparent {
+      background: rgba(255,255,255,0.9);
+    }
+}
+
 </style>
+</head>
 
+<body>
 
-<!-- CERTIFICATIONS CAROUSEL SECTION -->
+<nav id="navbar" >
+  <div class="logo"><img src="logo.png" style="height: 70px;"></div>
+
+  <ul id="menu">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="social-contact">
+    <a href="https://facebook.com/originsspices" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/origins_spices" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/origins-spices" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://x.com/origins_spices" target="_blank"><i class="fab fa-twitter"></i></a>
+    <div class="whatsapp">
+      <i class="fab fa-whatsapp"></i> +91 99753 79874
+    </div>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="overlay"></div>
+  <div class="text-box">
+    <h1>Sustainably sourced spices packed for global kitchens</h1>
+    <p id="changingText">Delivering the finest Indian spices to the world.</p>
+    <div class="buttons">
+      <a href="contact.html" class="btn active">Request Samples</a>
+      <a href="#products" class="btn outline">View Products</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 6rem 6%; background:#f4f4f4;">
+  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#222;">Our Commitments</h2>
+  
+  <div class="commitments-container">
+    <div class="commitment-card">
+      <div class="icon">
+        <img src="assure.png" style="height: 50px;" alt="Quality Icon">
+      </div>
+      <div class="content">
+        <h3>Quality Assured</h3>
+        <p>ISO & Lab-certified products. Batch-level lab reports available on request.</p>
+      </div>
+    </div>
+    <div class="commitment-card">
+      <div class="icon">
+         <img src="trace.png" style="height: 50px;" alt="Traceability">
+      </div>
+      <div class="content">
+        <h3>Traceability</h3>
+        <p>From farm to port — full traceability and transparent supply chains.</p>
+      </div>
+    </div>
+    <div class="commitment-card">
+      <div class="icon">
+        <img src="Expert.png" style="height: 50px;" alt="Export Icon">  
+      </div>
+      <div class="content">
+        <h3>Export Expertise</h3>
+        <p>Custom packaging, FCL/LCL shipments, and export documentation support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" style="padding: 6rem 6%; background:#fff;">
+  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#222;">Our Signature Products</h2>
+
+  <div class="products-container">
+    <div class="product-card" style="background:#D32F2F;">
+      <img src="chilli.png" alt="Chili Powder">
+      <h3>Chili Powder</h3>
+    </div>
+    <div class="product-card" style="background:#a16d38;">
+      <img src="cumins.png" alt="Cumin">
+      <h3>Cumin</h3>
+    </div>
+    <div class="product-card" style="background:#FFC107; color:#222;">
+      <img src="turmeric.png" alt="Turmeric">
+      <h3>Turmeric</h3>
+    </div>
+    <div class="product-card" style="background:#388E3C;">
+      <img src="coria.png" alt="Coriander">
+      <h3>Coriander</h3>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 6%; background: linear-gradient(135deg, #fdfbfb, #ebedee);">
+  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:4rem; color:#222;">About Us</h2>
+
+  <div class="about-container">
+    <div class="about-image">
+      <img src="SPP1.png" alt="About Us Image">
+    </div>
+    <div class="about-content">
+      <h3>Who We Are</h3>
+      <p>
+        Origin's Spices: Your Trusted Global Spice Partner Origin's Spices is a Natural Brand of Shrawani Farmfood India LLP which is a SHRWANI GROUP of company building expertise in international spice sourcing and supply chain management.
+      </p>
+      <p>
+        We are dedicated to providing global buyers with premium Indian spices, ensuring both purity and reliability in every shipment. Our business is founded on ethical partnerships: we work directly with small farmers and cooperatives across India. This collaborative approach allows us to maintain exceptional product quality, guarantee complete traceability, and ensure fair pricing and sustainable practices at the source.
+      </p>
+      
+      <a href="about.html" class="btn-about">Learn More</a>
+    </div>
+  </div>
+</section>
+
 <section id="certificates">
     <h2>Our Certificates</h2>
     <div class="certificate-container">
@@ -730,336 +920,174 @@ setInterval(() => {
     </div>
 </section>
 
+<!-- ========================= Footer ========================= -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="logo.png" style="height: 90px;padding-bottom: 20px;" alt="Origin's Spices Logo" />
+        <p>Leading exporter of premium spices and blends, delivering quality and flavor worldwide.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/originsspices"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/origins_spices"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/origins-spices"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/origins_spices"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
 
-<style>
-  #certificates {
-    padding: 40px 20px;
-    text-align: center;
-}
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html" class="footer-link">Our Products</a>
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="about.html" class="footer-link">Certificates</a>
+      </div>
 
-#certificates h2 {
-    color: #000000;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong><br>Origin's Spices<br>Shop No 3, Neelaya by Naiknavare, near ABC Petrol Pump, Talegaon Dabhade, Pune Maharashtra - 410506</p>
+        <p><strong>Phone:</strong> +91 99753 79874</p>
+        <p><strong>Email:</strong> business@originsspices.in</p>
+      </div>
 
-.certificate-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.certificate {
-    position: relative;
-    width: 200px;
-    height: 280px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(87, 86, 86, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.certificate img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.certificate .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.certificate:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
-
-.certificate:hover .overlay {
-    opacity: 1;
-}
-  
-</style>
-
-
-
-
-
-
-<!-- FOOTER SECTION -->
-<footer style="background: linear-gradient(135deg, #222, #1a1a1a); color:#fff; padding:6rem 6%; position:relative; overflow:hidden; font-family:sans-serif;">
-  <!-- Footer Top -->
-  <div class="footer-top" style="display:flex; flex-wrap:wrap; gap:3rem; justify-content:space-between;">
-    
-    <!-- Logo + About -->
-    <div class="footer-col" style="flex:1 1 250px;">
-      <div class="footer-logo" ><img src="logo.png" style="height: 100px"></div>
-      <p style="color:#ccc;">Leading exporter of premium spices and blends, delivering quality and flavor worldwide.</p>
-      <!-- Social Icons -->
-      <div class="footer-social" style="margin-top:1.5rem; display:flex; gap:1rem;">
-        <a href="https://facebook.com/originsspices" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://instagram.com/origins_spices" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/company/origins-spices" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://x.com/origins_spices" target="_blank"><i class="fab fa-twitter"></i></a>
+      <div class="footer-col">
+        <h4>Our Partners</h4>
+        <p>Shrawani Addsbs India Pvt Ltd<br>Shrawani Industries India Pvt Ltd<br>Anasha Digisoln<br>Nath Leno</p>
+        <a href="#" style="display:inline-block;margin-top:1rem;color:#ff0000;font-weight:600;text-decoration:none;">See All →</a>
       </div>
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-col" style="flex:1 1 200px;">
-      <h4 style="margin-bottom:1rem; color:#ff6363;">Quick Links</h4>
-      <ul style="list-style:none; padding:0;">
-        <li><a href="#home" class="footer-link">Home</a></li>
-        <li><a href="#Products" class="footer-link">Our Products</a></li>
-        <li><a href="about.html" class="footer-link">About Us</a></li>
-        <li><a href="contact.html" class="footer-link">Contact</a></li>
-         <li><a href="#certificates" class="footer-link">Certificates</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>©2025 Shrawani Farmfoods India LLP | All rights reserved</p>
+      <div>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Compliances</a>
+      </div>
     </div>
 
-    <!-- Contact -->
-    <div class="footer-col" style="flex:1 1 200px;">
-      <h4 style="margin-bottom:1rem; color:#ff6363;">Contact</h4>
-      
-      <ul class="partners-list" style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:1rem;">
-        <li><p><strong>Address :</strong><br> Shop No 3, Neelaya by Naiknavare, near Abc Petrol Pump, Talegaon Dabhade, Pune Maharashtra - 410506 (INDIA)  </p></li>
-        <li><p><strong>Contact No. :</strong>+91 9975379874</p></li>
-        <li><p><strong>Email :</strong> business@originsspices.in</p></li> 
+    <div class="footer-float-icon icon1">&#10052;</div>
+    <div class="footer-float-icon icon2">&#9733;</div>
+    <div class="footer-float-icon icon3">&#10084;</div>
+  </footer>
 
-      </ul>
-    </div>
-
-    <!-- Our Partners -->
-    <div class="footer-col" style="flex:1 1 300px;">
-      <h4 style="margin-bottom:1rem; color:#ff6363;">Our Partners</h4>
-      <ul class="partners-list" style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:1rem;">
-        <li>Shrawani Addsbs India Pvt Ltd.</li>
-        <li>Shrawani Industries india pvt ltd</li>
-        <li>Anasha Digisoln</li> and
-        <li>Nath Leno</li>
-
-      </ul>
-      <a href="#" class="see-all" style="display:inline-block; margin-top:1rem; color:#ff0000; text-decoration:none; font-weight:600;">See All →</a>
-    </div>
-  </div>
-
-  <!-- Footer Bottom -->
-  <div class="footer-bottom" style="border-top:1px solid #444; margin-top:3rem; padding-top:2rem; display:flex; flex-wrap:wrap; justify-content:space-between; font-size:0.9rem; color:#888;">
-    <p>©2025 Shrawani Farmfoods India LLP | All rights reserved</p>
-    <div style="display:flex; gap:1.5rem;">
-      <a href="#" class="footer-bottom-link">Terms</a>
-      <a href="#" class="footer-bottom-link">Privacy</a>
-      <a href="#" class="footer-bottom-link">Compliances</a>
-    </div>
-  </div>
-
-  <!-- Floating subtle animation shapes -->
-  <div class="footer-float-icon icon1">&#10052;</div>
-  <div class="footer-float-icon icon2">&#9733;</div>
-  <div class="footer-float-icon icon3">&#10084;</div>
-</footer>
-
-<style>
-   .footer-botto {
-        
-            text-align: center;
-            margin-top: 1px;
-            font-size: 12px;
-            color: #a80000;
-            background-color: #ffffff;
-            padding: 5px;
-        }
-        
-        .footer-botto a {
-            color: #ff6600;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-/* Back to Top Button Styling */
-    #backToTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: red;
-      color: white;
-      font-size: 20px;
-      border-radius: 9px;
-      padding: 9px;
-      display: none;
-      transition: opacity 0.3s ease;
-      cursor: pointer;
-    }
-    
-    #backToTopBtn:hover {
-      background-color: #e65c00;
-    }
-    
-    @media (max-width: 768px) {
-    .header {
-      font-size: 18px;
-    }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-    }
-    }
-    
-    /* Smooth scroll behavior */
-    html {
-      scroll-behavior: smooth;
-    }
-
-</style>
-
-<div class="footer-botto">
-  
-             <p style="color:black; font-weight:bold;">Designed and Developed by <a href="https://anashadigisoln.in" target="_blank">Anasha Digisoln</a> <a href="https://www.instagram.com/anasha_digisoln/?hl=en" target="_blank"><img src="https://rjiindia.in/Anasha2.png" alt="Anasha Digisoln Logo" class="anasha-logo" style="height: 20px;"></a></p>
-         </div>
-
-<!-- Back to Top Button -->
-      <a id="backToTopBtn" href="#home">
-          <i class="fa fa-angle-up"></i>
+  <!-- ========================= Footer Bottom Bar ========================= -->
+  <div class="footer-botto">
+    <p style="color:black;font-weight:bold;">
+      Designed and Developed by
+      <a href="https://anashadigisoln.in" target="_blank">Anasha Digisoln</a>
+      <a href="https://www.instagram.com/anasha_digisoln/?hl=en" target="_blank">
+        <img src="https://rjiindia.in/Anasha2.png" alt="Anasha Digisoln Logo" style="height: 20px;" />
       </a>
-      <script> // Back to Top Button Visibility
-      const backToTopBtn = document.getElementById("backToTopBtn");
-  
-      window.onscroll = function() {
-          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-              backToTopBtn.style.display = "block";  // Show button
-          } else {
-              backToTopBtn.style.display = "none";  // Hide button
-          }
-      }
-      </script>
-      
-<style>
-  /* Footer Links */
-  .footer-link {
-    color:#ccc;
-    text-decoration:none;
-    display:block;
-    margin-bottom:0.6rem;
-    transition: color 0.3s ease;
-  }
-  .footer-link:hover { color:#00c9ff; }
+    </p>
+  </div>
 
-  /* Social icons */
-  .footer-social a {
-    font-size:1.2rem;
-    color:#ccc;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:36px;
-    height:36px;
-    border-radius:50%;
-    background:rgba(255,255,255,0.05);
-    transition: all 0.3s ease;
-  }
-  .footer-social a:hover {
-    color:#fff;
-    background: linear-gradient(135deg, #ff7b00, #e04300);
-    transform:scale(1.2);
-  }
+<a id="backToTopBtn" href="#home">
+    <i class="fa fa-angle-up"></i>
+</a>
 
-  /* Footer bottom links */
-  .footer-bottom-link {
-    color:#888;
-    text-decoration:none;
-    transition: color 0.3s ease;
-  }
-  .footer-bottom-link:hover { color:#00c9ff; }
 
-  /* Floating icons */
-  .footer-float-icon {
-    position:absolute;
-    font-size:2rem;
-    color:rgba(255,255,255,0.05);
-    animation: floatFooter 6s ease-in-out infinite alternate;
-  }
-  .icon1 { top:10%; left:5%; animation-delay:0s; }
-  .icon2 { bottom:20%; right:10%; animation-delay:2s; }
-  .icon3 { top:50%; left:80%; animation-delay:4s; }
-
-  @keyframes floatFooter {
-    0% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(10deg); }
-    100% { transform: translateY(0) rotate(-10deg); }
-  }
-
-  /* Responsive */
-  @media(max-width:992px){
-    .footer-top { flex-direction:column; gap:3rem; }
-    .footer-bottom { flex-direction:column; gap:1rem; align-items:center; }
-    .partners-list { justify-content:center; }
-  }
-</style>
-
-<!-- Font Awesome CDN for social icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+// JS for Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
 
-  <script>
-    // Navbar scroll effect
-    const nav = document.getElementById("navbar");
-    const navLinks = document.getElementById("navLinks");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
-    });
-    function toggleMenu() { navLinks.classList.toggle("active"); }
+// NAVBAR SCROLL EFFECT ('transparent' class)
+window.addEventListener("scroll", () => {
+  const nav = document.getElementById("navbar");
+  if (window.scrollY > 100) {
+    nav.classList.add("transparent");
+  } else {
+    nav.classList.remove("transparent");
+  }
+});
 
-    // Slider
-    const slides = document.querySelectorAll(".slide");
-    const controls = document.getElementById("controls");
-    let currentIndex = 0;
+// HAMBURGER MENU
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
 
-    // Create dots
+// CHANGING TEXT (Hero Section Text Rotator)
+const textArray = [
+  "Delivering the finest Indian spices to the world.",
+  "Sourced from the heart of India’s spice lands.",
+  "Quality that adds aroma to every kitchen.",
+  "Bringing authentic taste to every meal."
+];
+let index = 0;
+const textRotatorInterval = setInterval(() => {
+  const text = document.getElementById("changingText");
+  text.style.opacity = 0;
+  setTimeout(() => {
+    index = (index + 1) % textArray.length;
+    text.textContent = textArray[index];
+    text.style.opacity = 1;
+  }, 500);
+}, 5000);
+
+
+// Back to Top Button Visibility
+const backToTopBtn = document.getElementById("backToTopBtn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// SLIDER LOGIC (Included for completeness, but depends on presence of .slide elements)
+const slides = document.querySelectorAll(".slide");
+const controls = document.getElementById("controls");
+let currentSlideIndex = 0;
+
+if (slides.length > 0) {
     slides.forEach((_, i) => {
       const dot = document.createElement("div");
       dot.classList.add("dot");
       if (i === 0) dot.classList.add("active");
-      dot.addEventListener("click", () => goToSlide(i));
-      controls.appendChild(dot);
+      
+      if(controls) {
+        dot.addEventListener("click", () => goToSlide(i));
+        controls.appendChild(dot);
+      }
     });
     const dots = document.querySelectorAll(".dot");
 
     function goToSlide(index) {
-      slides[currentIndex].classList.remove("active");
-      dots[currentIndex].classList.remove("active");
-      slides[index].querySelector(".slide-text").classList.add("active");
-      slides[currentIndex].querySelector(".slide-text").classList.remove("active");
+      if (slides[currentSlideIndex]) slides[currentSlideIndex].classList.remove("active");
+      if (dots[currentSlideIndex]) dots[currentIndex].classList.remove("active");
+      if (slides[currentSlideIndex] && slides[currentSlideIndex].querySelector(".slide-text")) {
+          slides[currentSlideIndex].querySelector(".slide-text").classList.remove("active");
+      }
 
-      currentIndex = index;
+      currentSlideIndex = index;
 
-      slides[currentIndex].classList.add("active");
-      dots[currentIndex].classList.add("active");
+      if (slides[currentSlideIndex]) slides[currentSlideIndex].classList.add("active");
+      if (dots[currentSlideIndex]) dots[currentSlideIndex].classList.add("active");
+      if (slides[currentSlideIndex] && slides[currentSlideIndex].querySelector(".slide-text")) {
+        slides[currentSlideIndex].querySelector(".slide-text").classList.add("active");
+      }
     }
 
     function nextSlide() {
-      let nextIndex = (currentIndex + 1) % slides.length;
+      let nextIndex = (currentSlideIndex + 1) % slides.length;
       goToSlide(nextIndex);
     }
 
-    setInterval(nextSlide, 5000); // auto slide
-  </script>
-
+    setInterval(nextSlide, 5000); 
+}
+</script>
 
 </body>
 </html>
