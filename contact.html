@@ -189,5 +189,49 @@
     const menu = document.getElementById("menu");
     hamburger.addEventListener("click", () => menu.classList.toggle("active"));
   </script>
+  <!-- ===== EmailJS SDK (CDN) ===== -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- ===== EmailJS initialization & form handler ===== -->
+<script>
+  (function() {
+    // Initialize EmailJS with your public key
+    emailjs.init({ publicKey: 'bGxCoJP1gDkGzFlom' });
+  })();
+
+  // Select form and status elements
+  const contactForm = document.getElementById('contactForm');
+  const statusEl = document.getElementById('form-status');
+
+  // Listen for form submit
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    statusEl.textContent = '';
+
+    // Send the form using EmailJS
+    emailjs.sendForm('service_id8mehk', 'template_mee2gbc', this)
+      .then(function() {
+        // Success feedback
+        statusEl.style.color = 'green';
+        statusEl.textContent = '✅ Thank you! Your message has been sent successfully.';
+        contactForm.reset();
+      }, function(error) {
+        // Error feedback
+        console.error('EmailJS Error:', error);
+        statusEl.style.color = 'crimson';
+        statusEl.textContent = '❌ Oops! Something went wrong. Please try again later.';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      });
+  });
+</script>
+
 </body>
 </html>
