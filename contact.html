@@ -45,12 +45,6 @@
   ]
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  (function(){
-      emailjs.init("bGxCoJP1gDkGzFlom"); // Replace with your actual Public Key
-  })();
-</script>
 
 </head>
 
@@ -111,13 +105,14 @@
       <h2>Know More About Origin's Spices</h2>
       <p>Get in touch with us by filling out the form below.</p>
 
-      <form id="contactForm">
-        <input type="text" name="user_name" placeholder="Full Name" required />
-        <input type="tel" name="phone" placeholder="Mobile No." required />
-        <input type="email" name="user_email" placeholder="Email-ID" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <form id="contactForm">
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Your Phone" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="form-status" style="margin-top:10px;"></p>
     </div>
   </section>
 
@@ -200,50 +195,6 @@
   </script>
 
 
-  
-<!-- ===== EmailJS initialization & form handler ===== -->
-
-<script>
-  (function() {
-    // Initialize EmailJS with your public key
-    emailjs.init({ publicKey: 'bGxCoJP1gDkGzFlom' });
-  })();
-
-  // Select form and status elements
-  const contactForm = document.getElementById('contactForm');
-  const statusEl = document.getElementById('form-status');
-
-  // Listen for form submit
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
-    statusEl.textContent = '';
-
-    // Send the form using EmailJS
-    emailjs.sendForm('service_id8mehk', 'template_mee2gbc', this)
-      .then(function() {
-        // Success feedback
-        statusEl.style.color = 'green';
-        statusEl.textContent = '✅ Thank you! Your message has been sent successfully.';
-        contactForm.reset();
-      }, function(error) {
-        // Error feedback
-        console.error('EmailJS Error:', error);
-        statusEl.style.color = 'crimson';
-        statusEl.textContent = '❌ Oops! Something went wrong. Please try again later.';
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-      });
-  });
-</script>
-
-
 <!-- ===== Content Protection ===== -->
 <style>
   /* Disable text selection and dragging */
@@ -281,6 +232,55 @@
     if (event.key === 'F12') {
       event.preventDefault();
     }
+  });
+</script>
+
+
+
+<!-- ===========================
+     EMAILJS SDK + SCRIPT
+     =========================== -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Initialize EmailJS with your public key
+  (function() {
+    emailjs.init('uTZrMxBjIBD76_Rt-'); // ✅ Your Public Key
+  })();
+
+  // Wait for the page to load before binding form
+  document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    const statusEl = document.getElementById('form-status');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+
+      // Disable button and show loading text
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      statusEl.textContent = '';
+
+      // Send form data via EmailJS
+      emailjs.sendForm('service_id8mehk', 'template_mee2gbc', this)
+        .then(() => {
+          statusEl.style.color = 'green';
+          statusEl.textContent = '✅ Message sent successfully! We’ll get back to you soon.';
+          contactForm.reset();
+        })
+        .catch((error) => {
+          console.error('EmailJS Error:', error);
+          statusEl.style.color = 'crimson';
+          statusEl.textContent = '❌ Failed to send. Please try again later.';
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        });
+    });
   });
 </script>
 
