@@ -111,7 +111,7 @@
       <h2>Know More About Origin's Spices</h2>
       <p>Get in touch with us by filling out the form below.</p>
 
-      <form>
+      <form id="contact-form">
         <input type="text" name="user_name" placeholder="Full Name" required />
         <input type="tel" name="phone" placeholder="Mobile No." required />
         <input type="email" name="user_email" placeholder="Email-ID" required />
@@ -198,6 +198,8 @@
     const menu = document.getElementById("menu");
     hamburger.addEventListener("click", () => menu.classList.toggle("active"));
   </script>
+
+
   <!-- ===== EmailJS SDK (CDN) ===== -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
@@ -210,7 +212,7 @@
   })();
 
   // Select form and status elements
-  const contactForm = document.getElementById('contactForm');
+  const contactForm = document.getElementById('contact-form');
   const statusEl = document.getElementById('form-status');
 
   // Listen for form submit
@@ -242,6 +244,8 @@
       });
   });
 </script>
+
+
 <!-- ===== Content Protection ===== -->
 <style>
   /* Disable text selection and dragging */
