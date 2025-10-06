@@ -1746,3 +1746,10 @@ nav ul li a.active::after {
       text-decoration: none;
       font-weight: bold;
     }
+    
+#form-status {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
