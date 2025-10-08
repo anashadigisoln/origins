@@ -125,7 +125,7 @@ nav ul li a.active::after {
   align-items: center;
   position: relative;
   padding-top: 20px;
-  margin-top: 20px;
+  margin-top: 200px;
 }
 
 .overlay {
@@ -293,7 +293,7 @@ nav ul li a.active::after {
   }
   /* ... (rest of the products CSS) ... */
   .product-card img {
-    width: 300px;
+    width: 270px;
     height: 400px;
     object-fit: contain;
     margin-bottom: 1rem;
