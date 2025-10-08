@@ -124,8 +124,7 @@ nav ul li a.active::after {
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 20px;
-  margin-top: 200px;
+  
 }
 
 .overlay {
@@ -274,7 +273,7 @@ nav ul li a.active::after {
 
   .product-card {
     flex: 1 1 calc(25% - 2rem);
-    min-width: 300px;
+    min-width: 270px;
     height: 400px;
     display: flex;
     flex-direction: column;
