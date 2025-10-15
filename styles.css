@@ -360,7 +360,7 @@ nav ul li a.active::after {
   }
 
   .about-content {
-    flex: 1 1 45%;
+    flex: 1 1 55%;
   }
 
   .about-content h3 {
