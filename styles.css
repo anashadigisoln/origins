@@ -335,7 +335,7 @@ nav ul li a.active::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 3rem;
     flex-wrap: wrap;
   }
   /* ... (rest of the about CSS) ... */
