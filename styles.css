@@ -360,7 +360,7 @@ nav ul li a.active::after {
   }
 
   .about-content {
-    flex: 1 1 55%;
+    flex: 1 1 45%;
   }
 
   .about-content h3 {
@@ -376,12 +376,6 @@ nav ul li a.active::after {
     color: #555;
   }
 
-  .about-content ul {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    color: #555;
-  }
 
   .btn-about {
     display: inline-block;
