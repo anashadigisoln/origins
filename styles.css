@@ -341,7 +341,7 @@ nav ul li a.active::after {
   /* ... (rest of the about CSS) ... */
 
   .about-image {
-    flex: 1 1 30%;
+    flex: 1 1 20%;
     overflow: hidden;
     border-radius: 16px;
     position: relative;
@@ -360,7 +360,7 @@ nav ul li a.active::after {
   }
 
   .about-content {
-    flex: 1 1 45%;
+    flex: 1 1 65%;
   }
 
   .about-content h3 {
