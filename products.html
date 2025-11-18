@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Products — Premium Export Spices</title>
+
+  <meta name="description" content="Origins Spices: Exporting premium, sustainably-sourced spices worldwide. Green cardamom, turmeric, black pepper and more Indian spices exported globally." />
+  <meta name="keywords" content="export spices, Indian spices, premium spices, buy spices online, wholesale spices, cardamom, turmeric, black pepper, spice exporter India, Our Products, indian Spices" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+   
+
+  <style>
+    /* ===== Utility Classes ===== */
+/* Custom font setup */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3f0; /* Soft cream background */
+        }
+        
+        /* Hero section background rotation effect */
+        .hero-bg {
+            background-image: url('https://placehold.co/1200x600/6f3b00/ffffff?text=Spice+Fields+1');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+        }
+        /* Card hover effect */
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        /* Styling for the badge */
+        .gi-badge {
+            background-color: #ffcc00; /* Golden yellow */
+            color: #6f3b00; /* Dark spice color */
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 9999px; /* Pill shape */
+            font-size: 0.75rem;
+        }
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- ========================= Navbar ========================= -->
+  <nav id="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Origin's Spices Logo" />
+    </div>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">Certificates</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+    <div class="social-contact">
+      <a href="https://facebook.com/originsspices" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/origins_spices" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/origins-spices" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://x.com/origins_spices" target="_blank"><i class="fab fa-twitter"></i></a>
+      <div class="whatsapp"><i class="fab fa-whatsapp"></i> +91 91305 05550</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ========================= Hero Section ========================= -->
+  <section class="contact-hero">
+    <div class="overlay">
+      <h1>The Essence of Pure Origin</h1>
+      <p>Ethically Sourced. Traceably Grown. Unmistakable Flavour.</p>
+    </div>
+  </section>
+
+  <!-- ========================= Product Section ========================= -->
+
+<!-- Main Products Section -->
+    <main id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-4xl text-center font-bold mb-10 ">Explore Our Curated Collections</h2>
+
+        <!-- Filter/Sorting Controls -->
+        <div class="flex flex-wrap justify-center space-x-3 mb-10">
+            <button onclick="filterProducts('all')" class="filter-btn bg-[#a0522d] text-white px-5 py-2 rounded-full shadow-md hover:bg-[#8b4513] transition duration-200 text-sm md:text-base mb-2">All Spices</button>
+            <button onclick="filterProducts('whole')" class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full shadow-md border border-gray-300 hover:bg-gray-100 transition duration-200 text-sm md:text-base mb-2">Whole Spices</button>
+            <button onclick="filterProducts('powder')" class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full shadow-md border border-gray-300 hover:bg-gray-100 transition duration-200 text-sm md:text-base mb-2">Ground Spices</button>
+            <button onclick="filterProducts('blends')" class="filter-btn bg-white text-gray-700 px-5 py-2 rounded-full shadow-md border border-gray-300 hover:bg-gray-100 transition duration-200 text-sm md:text-base mb-2">Special Blends</button>
+
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Products will be generated here by JavaScript -->
+        </div>
+
+        <!-- Call to Action Footer -->
+        <div class="mt-16 text-center">
+            <p class="text-xl text-gray-600 mb-6">Want to know the journey of your spice? Scan the QR code on every pack for farm details.</p>
+        </div>
+    </main>
+
+  <!-- ========================= Footer ========================= -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="logo.png" style="height: 90px; padding-bottom: 20px;" alt="Origin's Spices Logo" />
+        <p>Leading exporter of premium spices and blends, delivering quality and flavor worldwide.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/originsspices"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/origins_spices"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/origins-spices"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/origins_spices"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="products.html" class="footer-link">Our Products</a>
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="about.html" class="footer-link">Certificates</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong><br>Origin's Spices<br>Shop No 3, Neelaya by Naiknavare, near ABC Petrol Pump, Talegaon Dabhade, Pune Maharashtra - 410506</p>
+        <p><strong>Phone:</strong> +91 91305 05550</p>
+        <p><strong>Email:</strong> business@originsspices.in</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Partners</h4>
+        <p>Shrawani Addsbs India Pvt Ltd<br>Shrawani Industries India Pvt Ltd<br>Anasha Digisoln<br>Nath Leno</p>
+        <a href="#" style="display:inline-block;margin-top:1rem;color:#ff0000;font-weight:600;text-decoration:none;">See All →</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2025 Shrawani Farmfoods India LLP | All rights reserved</p>
+      <div>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Compliances</a>
+      </div>
+    </div>
+
+    <div class="footer-float-icon icon1">&#10052;</div>
+    <div class="footer-float-icon icon2">&#9733;</div>
+    <div class="footer-float-icon icon3">&#10084;</div>
+  </footer>
+
+  <!-- ========================= Footer Bottom Bar ========================= -->
+  <div class="footer-botto">
+    <p style="color:black;font-weight:bold;">
+      Designed and Developed by
+      <a href="https://anashadigisoln.in" target="_blank">Anasha Digisoln</a>
+      <a href="https://www.instagram.com/anasha_digisoln/?hl=en" target="_blank">
+        <img src="https://rjiindia.in/Anasha2.png" alt="Anasha Digisoln Logo" style="height: 20px;" />
+      </a>
+    </p>
+  </div>
+
+  <!-- ========================= JavaScript ========================= -->
+  <script>
+    // ===== Navbar Scroll Effect =====
+    window.addEventListener("scroll", () => {
+      const nav = document.getElementById("navbar");
+      if (window.scrollY > 100) nav.classList.add("transparent");
+      else nav.classList.remove("transparent");
+    });
+
+    // ===== Hamburger Menu =====
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+    hamburger.addEventListener("click", () => menu.classList.toggle("active"));
+  </script>
+  <script>
+        
+        // Data structure for all spice products with respective image files
+const productsData = [
+    {
+        id: 1,
+        name: "Tellicherry Black Pepper",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "whole",
+        origin: "Kerala",
+        image: "black pepper.webp",  // Image file
+        
+        description: "Bold, pungent, and highly aromatic whole black peppercorns."
+    },
+    {
+        id: 2,
+        name: "Turmeric Powder",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "powder",
+        origin: "Tamil Nadu",
+        image: "turmeric powder.webp",  // Image file
+        description: "High curcumin content with vibrant color and medicinal quality."
+    },
+    {
+        id: 3,
+        name: "Malabar Green Cardamom",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "whole",
+        origin: "Wayanad, Kerala",
+        image: "green cardamom.webp",  // Image file
+        isSpecial: false,
+        description: "A complex, citrusy, and sweet aroma for both savory and dessert dishes."
+    },
+    {
+        id: 4,
+        name: "Guntur Sannam Chilli Powder",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "powder",
+        origin: "Andhra Pradesh",
+        image: "chilli powder.webp",  // Image file
+        isSpecial: false,
+        description: "Known for deep color and medium heat, essential for South Indian cuisine."
+    },
+    {
+        id: 5,
+        name: "Garam Masala",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "blends",
+        origin: "Lucknow Style Blend",
+        image: "garam masala.webp",  // Image file
+        isSpecial: false,
+        description: "A finely ground aromatic blend for rich, Mughlai-style curries."
+    },
+    {
+        id: 6,
+        name: "Cumin Powder (Cumins Powder)",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "powder",
+        origin: "Rajasthan",
+        image: "cumin powder.webp",  // Image file
+        isSpecial: false,
+        description: "Aromatic and warm cumin powder essential in Indian cooking."
+    },
+    {
+        id: 7,
+        name: "Organic Ceylon Cinnamon",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "whole",
+        origin: "Sri Lanka (Ceylon)",
+        image: "cinnamon.webp",  // Image file
+        isSpecial: false,
+        description: "Sweet, subtle Cinnamomum verum, perfect for baking and lattes."
+    },
+    {
+        id: 8,
+        name: "Clove",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "whole",
+        origin: "Kerala",
+        image: "clove.webp",  // Image file
+        isSpecial: false,
+        description: "Fresh and fragrant whole cloves with a sweet, pungent flavor."
+    },
+    {
+        id: 9,
+        name: "Fennel Seeds (Saunf)",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "whole",
+        origin: "Rajasthan",
+        image: "fennel seeds.webp",  // Image file
+        isSpecial: false,
+        description: "Aromatic fennel seeds with a sweet and slightly licorice-like flavor."
+    },
+    {
+        id: 10,
+        name: "Cumin Seeds (Jeera)",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "whole",
+        origin: "Rajasthan",
+        image: "cumin seeds.webp",  // Image file
+        isSpecial: false,
+        description: "Aromatic cumin seeds, essential for Indian cooking and spice blends."
+    },
+    {
+        id: 11,
+        name: "Coriander Powder",
+        price: "Available in",
+        unit: " Bulk Quantities & Retails Packs",
+        category: "powder",
+        origin: "Madhya Pradesh",
+        image: "coriander powder.webp",  // Image file
+        isSpecial: false,
+        description: "Finely ground coriander with a warm, citrusy flavor."
+    },
+    {
+        id: 12,
+        name: "Chicken Masala Powder",
+        price: "Available in",
+        unit: "Retails Packs 50g, 100g, 250g, 500g",
+        category: "blends",
+        origin: "Indian Spices Blend",
+        image: "chicken masala powder.webp",  // Image file
+        isSpecial: false,
+        description: "A robust blend for authentic Indian chicken curries."
+    },
+    {
+        id: 13,
+        name: "Biryani Masala Powder",
+        price: "Available in",
+        unit: "Retails Packs 50g, 100g, 250g, 500g",
+        category: "blends",
+        origin: "Hyderabadi Style",
+        image: "biryani masala.webp",  // Image file
+        isSpecial: false,
+        description: "A flavorful mix of spices that creates the perfect biryani."
+    },
+    {
+        id: 14,
+        name: "Biryani Mix Whole Spices Pack",
+        price: "Available in",
+        unit: "Retails Packs 50g, 100g, 250g, 500g",
+        category: "whole",
+        origin: "Hyderabad, India",
+        image: "biryani whole.webp",  // Image file
+        isSpecial: false,
+        description: "A whole spice mix for making authentic Hyderabadi biryani."
+    }
+];
+
+        const productListContainer = document.getElementById('product-list');
+        const heroSection = document.getElementById('hero');
+        const bgImages = [
+            'https://placehold.co/1200x600/6f3b00/ffffff?text=Spice+Harvest+View',
+            'https://placehold.co/1200x600/a0522d/ffffff?text=Farmers+Selecting+Spices',
+            'https://placehold.co/1200x600/8b4513/ffffff?text=Fresh+Turmeric+Crop'
+        ];
+        let currentBgIndex = 0;
+
+        // Function to rotate hero background images
+        function rotateBackground() {
+            currentBgIndex = (currentBgIndex + 1) % bgImages.length;
+            heroSection.style.backgroundImage = `url('${bgImages[currentBgIndex]}')`;
+        }
+        // Rotate every 5 seconds (5000ms)
+        setInterval(rotateBackground, 5000);
+
+        // Function to render a single product card
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = `product-card p-4 flex flex-col items-center text-center shadow-lg rounded-xl`;
+            card.setAttribute('data-category', product.category);
+            if (product.isSpecial) {
+                card.setAttribute('data-category', `${product.category} special`);
+            }
+
+            // Price calculation and formatting
+            const priceDisplay = `${product.price}`;
+            const unitDisplay = `/${product.unit}`;
+
+            card.innerHTML = `
+                <!-- Product Image -->
+                <img src="${product.image}" alt="${product.name}" class="w-full h-45 object-cover mb-4 rounded-lg">
+
+                <!-- Title & Origin -->
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">${product.name}</h3>
+                <p class="text-sm text-gray-600 font-medium">${product.origin}</p>
+
+                <!-- Description -->
+                <p class="text-sm text-gray-500 mt-3 h-12 overflow-hidden">${product.description}</p>
+
+                <!-- Price and Button -->
+                <div class="mt-5 w-full flex justify-between items-center px-2">
+                    <div class="flex items-baseline">
+                        <span class="text-1xl font-bold text-[red] text-[0.8em]">${priceDisplay}</span>
+
+                        <span class="text-1xl text-gray-500 text-[0.8em]">${unitDisplay}</span>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        // Function to filter and re-render the list
+        function filterProducts(filter) {
+            // Update active state of filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-[#a0522d]', 'text-white', 'border-gray-300');
+                btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+            });
+
+            const activeBtn = document.querySelector(`.filter-btn[onclick="filterProducts('${filter}')"]`);
+            if (activeBtn) {
+                 
+            }
+
+
+            // Clear the existing list
+            productListContainer.innerHTML = '';
+
+            // Filter and render
+            const filteredProducts = productsData.filter(product => {
+                if (filter === 'all') return true;
+                if (filter === 'special') return product.isSpecial;
+                return product.category === filter;
+            });
+
+            if (filteredProducts.length === 0) {
+                productListContainer.innerHTML = '<p class="text-center col-span-full text-gray-500 text-xl py-10">No products found in this category.</p>';
+            } else {
+                filteredProducts.forEach(product => {
+                    productListContainer.appendChild(createProductCard(product));
+                });
+            }
+        }
+
+        // Initial load: show all products
+        window.onload = function() {
+            filterProducts('all');
+        };
+    </script>
+</body>
+</html>
